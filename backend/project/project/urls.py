@@ -40,7 +40,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('courses/api' , CourseListFilterAPI.as_view),
+    path('courses/api' , CourseListFilterAPI.as_view()),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 
 ]
